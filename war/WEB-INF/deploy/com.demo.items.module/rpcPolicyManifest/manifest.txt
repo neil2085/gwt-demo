@@ -1,0 +1,2 @@
+# Module com.demo.items.module
+# RPC service class, partial path of RPC policy file

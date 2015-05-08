@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+	<ui:style>
+	.borderSpance {
+		padding: 10px;
+	}
+	
+	.cellStyle {
+		padding-left: 60px;
+	}
+	</ui:style>
+	<g:DockLayoutPanel >
+		<g:center>
+			<g:VerticalPanel styleName="{style.borderSpance}">
+				<g:HorizontalPanel width="400px"
+					verticalAlignment="ALIGN_MIDDLE">
+					<g:Label text="Task:" />
+					<g:TextBox ui:field="taskName" name="taskName" width="150px" />
+					<g:Button ui:field="addButton" text="Add" />
+				</g:HorizontalPanel>
+				<c:CellList ui:field="cellListView" styleName="{style.cellStyle}"></c:CellList>
+				<g:Button ui:field="removeButton" text="Remove" />
+			</g:VerticalPanel>
+		
+		</g:center>
+		<g:south size="50">
+		<g:ListBox ui:field="combBoxView"></g:ListBox>
+		</g:south>
+	</g:DockLayoutPanel>
+</ui:UiBinder> 

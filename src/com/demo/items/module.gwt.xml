@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.6.1//EN" "http://google-web-toolkit.googlecode.com/svn/tags/2.6.1/distro-source/core/src/gwt-module.dtd">
+<module>
+  <inherits name="com.google.gwt.core.Core"/>
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name="com.google.gwt.i18n.I18N"/>
+  <inherits name="com.google.gwt.i18n.CldrLocales"/>
+  <inherits name="com.google.gwt.user.theme.clean.CleanResources"/>
+
+  <!-- Enable debug ID. -->
+  <inherits name="com.google.gwt.user.Debug"/>
+  <set-property name="gwt.enableDebugId" value="true"/> 
+	  
+	<source path="client" />
+	<entry-point class="com.demo.items.client.ItemsShell"></entry-point>
+</module>
